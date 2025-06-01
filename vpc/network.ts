@@ -18,6 +18,6 @@ export class Vpc extends pulumi.ComponentResource {
 
         this.vpc = new aws.ec2.Vpc(name,{cidrBlock: args.cidrBlock}, {parent: this });
 
-        this.registerOutputs({ vpcId: this.vpc.id})
+        this.registerOutputs({ vpc: this.vpc})
     }  
 }
