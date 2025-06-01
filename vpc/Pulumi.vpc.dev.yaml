@@ -1,0 +1,26 @@
+encryptionsalt: v1:3/DeKl/UZhQ=:v1:MPZy3/uzoql+9Xzb:5dfOSoN+hFsIef8DCmIHLj8+moeDTA==
+config:
+  aws:region: eu-west-1
+  vpc:cidrBlock: 10.0.0.0/16
+  vpc:enableHaNgw: "false"
+  vpc:subnets: 
+    public: 
+    - name: euw1a-public
+      cidrBlock: 10.0.0.0/24
+      availabilityZone: eu-west-1a
+    - name: euw1b-public
+      cidrBlock: 10.0.1.0/24
+      availabilityZone: eu-west-1b
+    - name: euw1c-public
+      cidrBlock: 10.0.2.0/24
+      availabilityZone: eu-west-1c
+    private: 
+    - name: euw1a-private
+      cidrBlock: 10.0.3.0/24
+      availabilityZone: eu-west-1a
+    - name: euw1b-private
+      cidrBlock: 10.0.4.0/24
+      availabilityZone: eu-west-1b
+    - name: euw1c-private
+      cidrBlock: 10.0.5.0/24
+      availabilityZone: eu-west-1c
